@@ -2,11 +2,9 @@ import { useState } from "react"
 
 const TodoForm = (props) => {
 
-    // const valueInput = "long";
     const [valueInput, setValueInput] = useState("eric")
     const {addNewTodo} = props;
 
-    // addNewTodo("Long");
     const handleClick = () => {
         addNewTodo(valueInput);
         setValueInput("");
@@ -24,9 +22,6 @@ const TodoForm = (props) => {
             <button style={{cursor: "pointer"}}
                 onClick={handleClick}
             >Add</button>
-            <div>
-                My text in put is = {valueInput}
-            </div>
         </div>
     )
 }
