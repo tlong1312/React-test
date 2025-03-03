@@ -4,10 +4,11 @@ const TodoForm = (props) => {
 
     // const valueInput = "long";
     const [valueInput, setValueInput] = useState("eric")
-    // const {addNewTodo} = props;
+    const {addNewTodo} = props;
 
     // addNewTodo("Long");
     const handleClick = () => {
+        addNewTodo(valueInput);
         console.log("check value input", valueInput)
     }
 
