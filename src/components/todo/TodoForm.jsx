@@ -1,16 +1,18 @@
+import { useState } from "react"
 
 const TodoForm = (props) => {
 
-    console.log(props)
+    // const valueInput = "long";
+    const [valueInput, setValueInput] = useState("eric")
     // const {addNewTodo} = props;
 
     // addNewTodo("Long");
     const handleClick = () => {
-        alert("click me")
+        console.log("check value input", valueInput)
     }
 
     const handleChange = (name) => {
-        console.log("handle change", name)
+        setValueInput(name)
     }
     return (
         <div className="todo-form">
@@ -20,6 +22,9 @@ const TodoForm = (props) => {
             <button style={{cursor: "pointer"}}
                 onClick={handleClick}
             >Add</button>
+            <div>
+                My text in put is = {valueInput}
+            </div>
         </div>
     )
 }
