@@ -9,7 +9,7 @@ const TodoForm = (props) => {
     // addNewTodo("Long");
     const handleClick = () => {
         addNewTodo(valueInput);
-        console.log("check value input", valueInput)
+        setValueInput("");
     }
 
     const handleChange = (name) => {
@@ -19,6 +19,7 @@ const TodoForm = (props) => {
         <div className="todo-form">
             <input type="text" placeholder="Add new todo" 
                 onChange={(event) => handleChange(event.target.value)}
+                value={valueInput}
             />
             <button style={{cursor: "pointer"}}
                 onClick={handleClick}
