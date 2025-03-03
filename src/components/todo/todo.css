@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.todo-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.todo-title {
+    font-size: 40px;
+    color: rgb(206, 23, 136);
+    text-align: center;
+}
+
+
+.todo-form{
+    width: 50%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+    margin: 20px;
+    padding: 0;
+    
+}
+
+.todo-form input{
+    width: 70%;
+    height: 50px;
+    font-size: 20px;
+    padding: 10px;
+    border: 2px solid blueviolet;
+    border-radius: 5px;
+    outline: none;
+    margin-right: 10px
+}
+
+.todo-form button{
+    width: 20%;
+    height: 50px;
+    font-size: 20px;
+    padding: 10px;
+    border: 2px solid rgb(245, 95, 245);
+    border-radius: 5px;
+    outline: none;
+    background-color: blueviolet;
+    color: white;
+}   
+
+.todo-data{
+    padding: 10px;
+    font-size: 20px;
+    color: rgb(137, 66, 212);
+    display: flex;
+    flex-direction: column;
+    border: 2px solid blue;
+    width: 50%;
+    border-radius: 15px;
+}
+
+.todo-image {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.logo {
+    height: 6em;
+    padding: 1.5em;
+    will-change: filter;
+    transition: filter 300ms;
+  }
+  .logo:hover {
+    filter: drop-shadow(0 0 2em #646cffaa);
+  }
+  .logo.react:hover {
+    filter: drop-shadow(0 0 2em #61dafbaa);
+  }
+  
+  @keyframes logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .logo {
+      animation: logo-spin infinite 20s linear;
+    }
+  }
