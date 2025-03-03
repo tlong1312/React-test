@@ -101,4 +101,6 @@
     display: flex;
     justify-content: space-between;
     margin: 6px;
+    align-items: center;
+    width: 100%;
   }
